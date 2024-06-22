@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <main>
+        <header>Expense Tracker</header>
+        <div class="content">
+            <section id="left">
+                <div class="total">
+                    <div class="budget same">
+                        <h4>Total Budget</h4>
+                        <p id="tb-a">0</p>
+                    </div>
+                    <div class="Expense same">
+                        <h4>Expense</h4>
+                        <p id="e-a">0</p>
+                    </div>
+                    <div class="balance same">
+                        <h4>Balance</h4>
+                        <p id="bal">0</p>
+                    </div>
+                </div>
+                <hr class="line">
+                <div class="data">
+                    <div class="expense-list">
+                        <h3 class="e-l">Expense-list</h3>
+                    </div>
+                    <div class="list">
+
+                    </div>
+                </div>
+            </section>
+            <section id="right">
+                <div id="none">
+                    <p id="error">please first add your budget</p>
+                    <div><i class="ri-wallet-fill"></i><input id="budget-e" type="number" placeholder="Enter Your Budget"></div>
+                    <button id="add-budget">Add Budget</button>
+                </div>
+                <form id="form">
+                   <div class="end">
+                    <p id="error-2">please enter both input !</p>
+                    <div><i class="ri-price-tag-3-fill"></i><input id="title-e" type="text" placeholder="Title"></div>
+                    <div> <span>$</span><input id="amount-e" type="number" placeholder="Enter Amount">
+                     </div>
+                     <button id="btn">Add Expense</button>
+                   </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
